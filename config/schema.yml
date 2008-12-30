@@ -1,0 +1,9 @@
+propel:
+  _attributes: { package: plugins.opAshiatoPlugin.lib.model }
+
+  ashiato:
+    id: ~
+    member_id_from: { type: integer, required: true, foreignTable: member, foreignReference: id, OnDelete: cascade }
+    member_id_to: { type: integer, required: true, foreignTable: member, foreignReference: id, OnDelete: cascade }
+    updated_at: ~
+

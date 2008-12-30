@@ -1,0 +1,4 @@
+all:
+  .settings:
+    update_span_minute: 5
+
