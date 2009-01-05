@@ -1,4 +1,3 @@
-<?php use_helper('Pagination'); ?>
 <li><?php echo sprintf('ページ全体のアクセス数：(%d) アクセス', $count) ?></li>
 <table>
   <tbody>
