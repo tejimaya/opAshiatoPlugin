@@ -2,6 +2,7 @@ Navi:
   default_navi_ashiato:
     type: "default"
     uri: "ashiato/list"
+    sort_order: 12;
 
 NaviI18n:
   default_navi_ashiato_i18n:
