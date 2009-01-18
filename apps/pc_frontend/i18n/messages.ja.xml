@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<xliff version="1.0">
+  <file orginal="global" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="1">
+        <source>Pageview logs</source>
+        <target>あしあと</target>
+      </trans-unit>
+      <trans-unit id="2">
+        <source>no other Pageview logs</source>
+        <target>あしあとがありません</target>
+      </trans-unit>
+      <trans-unit id="3">
+        <source>Pageview Logs of %1%</source>
+        <target>%1%さんのページを訪れた人たちです。</target>
+      </trans-unit>
+      <trans-unit id="4">
+        <source>Pageview %d Logs Explanation</source>
+        <target>最新%d件までを表示、同一人物・同一日付のアクセスは最新の日時だけが表示されます。</target>
+      </trans-unit>
+      <trans-unit id="5">
+        <source>Pageview %d Count</source>
+        <target>ページ全体のアクセス数：%d アクセス</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
