@@ -1,1 +1,1 @@
-<?php include_box('noAshiato', __('Pageview logs'), __('no other Pageview logs');); ?>
+<?php include_box('noAshiato', __('Pageview logs'), __('no other Pageview logs')) ?>
