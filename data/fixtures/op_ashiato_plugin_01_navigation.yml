@@ -1,11 +1,11 @@
-Navi:
-  default_navi_ashiato:
+Navigation:
+  default_navigation_ashiato:
     type: "default"
     uri: "ashiato/list"
     sort_order: 12;
 
-NaviI18n:
-  default_navi_ashiato_i18n:
-    id: default_navi_ashiato
+NavigationI18n:
+  default_navigation_ashiato_i18n:
+    id: default_navigation_ashiato
     caption: "あしあと"
     culture: "ja_JP"
