@@ -3,8 +3,8 @@ propel:
 
   ashiato:
     id: ~
-    member_id_from: { type: integer, required: true, foreignTable: member, foreignReference: id, OnDelete: cascade }
-    member_id_to: { type: integer, required: true, foreignTable: member, foreignReference: id, OnDelete: cascade }
+    member_id_from: { type: integer, required: true, foreignTable: member, foreignReference: id, onDelete: cascade }
+    member_id_to: { type: integer, required: true, foreignTable: member, foreignReference: id, onDelete: cascade }
     r_date: { type: DATE }
     updated_at: ~
 
