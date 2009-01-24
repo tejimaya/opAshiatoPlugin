@@ -12,6 +12,7 @@ class AshiatoPeer extends BaseAshiatoPeer
 {
   public static function getAshiatoMemberListPager($memberId, $page = 1, $size = 30)
   {
+    $date = array();
     $c = new Criteria();
     $c->clearSelectColumns()->addSelectColumn(AshiatoPeer::R_DATE);
     $c->add(AshiatoPeer::MEMBER_ID_TO, $memberId);
@@ -129,7 +130,7 @@ class AshiatoPeer extends BaseAshiatoPeer
     $ashiato = new Ashiato();
     $ashiato->setMemberIdFrom($memberIdFrom);
     $ashiato->setMemberIdTo($memberIdTo);
-    $ashiato->setRDate(date());
+    $ashiato->setRDate(time());
     $ashiato->save();
     return $ashiato->getID();
 
