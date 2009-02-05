@@ -5,16 +5,16 @@
     http://pear.php.net/dtd/package-2.0.xsd">
  <name>opAshiatoPlugin</name>
  <channel>plugins.openpne.jp</channel>
- <summary> </summary>
- <description> </description>
+ <summary>opAshiatoPlugin</summary>
+ <description>opAshiatoPlugin</description>
  <lead>
-  <name />
-  <user />
-  <email>maintainer@example.com</email>
+  <name>Satoru Yamane</name>
+  <user>icz</user>
+  <email />
   <active>yes</active>
  </lead>
- <date>2009-01-27</date>
- <time>08:18:48</time>
+ <date>2009-02-05</date>
+ <time>08:22:35</time>
  <version>
   <release>0.8.0</release>
   <api>0.8.0</api>
@@ -23,38 +23,33 @@
   <release>beta</release>
   <api>beta</api>
  </stability>
- <license>Apache 2.0</license>
+ <license>Apache</license>
  <notes>First release</notes>
  <contents>
   <dir baseinstalldir="/" name="/">
    <file baseinstalldir="/" md5sum="a4394df5eb8cac7b86a9b108f58db8c6" name="apps/pc_frontend/i18n/messages.ja.xml" role="data" />
-   <file baseinstalldir="/" md5sum="158a70da52748f6e219d79faeee86cac" name="apps/pc_frontend/modules/ashiato/actions/actions.class.php" role="php" />
+   <file baseinstalldir="/" md5sum="158a70da52748f6e219d79faeee86cac" name="apps/pc_frontend/modules/ashiato/actions/actions.class.php" role="data" />
    <file baseinstalldir="/" md5sum="a3968728f09d5e2ac78764189a56a6ec" name="apps/pc_frontend/modules/ashiato/config/module.yml" role="data" />
    <file baseinstalldir="/" md5sum="31a9b416e4603892e50fc52658028ae8" name="apps/pc_frontend/modules/ashiato/config/security.yml" role="data" />
-   <file baseinstalldir="/" md5sum="d41d8cd98f00b204e9800998ecf8427e" name="apps/pc_frontend/modules/ashiato/templates/indexSuccess.php" role="php" />
-   <file baseinstalldir="/" md5sum="356d700903d793e82f382e2bdbd03d2c" name="apps/pc_frontend/modules/ashiato/templates/listError.php" role="php" />
-   <file baseinstalldir="/" md5sum="b65cca60163141453f6bb8feb59affdb" name="apps/pc_frontend/modules/ashiato/templates/listSuccess.php" role="php" />
+   <file baseinstalldir="/" md5sum="d41d8cd98f00b204e9800998ecf8427e" name="apps/pc_frontend/modules/ashiato/templates/indexSuccess.php" role="data" />
+   <file baseinstalldir="/" md5sum="356d700903d793e82f382e2bdbd03d2c" name="apps/pc_frontend/modules/ashiato/templates/listError.php" role="data" />
+   <file baseinstalldir="/" md5sum="b65cca60163141453f6bb8feb59affdb" name="apps/pc_frontend/modules/ashiato/templates/listSuccess.php" role="data" />
    <file baseinstalldir="/" md5sum="ac245011ffca1bd568135a91f0302bc8" name="config/app.yml" role="data" />
-   <file baseinstalldir="/" md5sum="626cbfa99e90311bd5f11f97fdc5d4f4" name="config/config.php" role="php" />
+   <file baseinstalldir="/" md5sum="626cbfa99e90311bd5f11f97fdc5d4f4" name="config/config.php" role="data" />
    <file baseinstalldir="/" md5sum="7be170651f59d9e3d935bc07fc7dab11" name="config/schema.yml" role="data" />
    <file baseinstalldir="/" md5sum="82ec57a82701bd4cad23fa1ba414b42a" name="data/fixtures/op_ashiato_plugin_01_navigation.yml" role="data" />
-   <file baseinstalldir="/" md5sum="5e50851e966be871615ccabc0d474fe0" name="lib/opRegisterAshiato.class.php" role="php" />
-   <file baseinstalldir="/" md5sum="c3bb1d9cfba60295e4c866156d83ccf3" name="lib/filter/AshiatoFormFilter.class.php" role="php" />
-   <file baseinstalldir="/" md5sum="f9064fcff2de5854196c8f1f6a097300" name="lib/filter/base/BaseAshiatoFormFilter.class.php" role="php" />
-   <file baseinstalldir="/" md5sum="f2c85b66f81cc0c7dc6b01bddd09e56e" name="lib/form/AshiatoForm.class.php" role="php" />
-   <file baseinstalldir="/" md5sum="6b34efc3d75ab7df1cac3c882237be91" name="lib/form/base/BaseAshiatoForm.class.php" role="php" />
-   <file baseinstalldir="/" md5sum="b0b68a2b1fb44f7cc3d7b932f6c24ede" name="lib/model/Ashiato.php" role="php" />
-   <file baseinstalldir="/" md5sum="8ff4a922ebfb9a2565b512b79dc22b65" name="lib/model/AshiatoPeer.php" role="php" />
-   <file baseinstalldir="/" md5sum="089ec1694b5a83e31185820bede01cc7" name="lib/model/map/AshiatoMapBuilder.php" role="php" />
-   <file baseinstalldir="/" md5sum="ee8d5236f15472f134124c0fe1cc222c" name="lib/model/om/BaseAshiato.php" role="php" />
-   <file baseinstalldir="/" md5sum="46d5c2793acf133f217507ef397ab7d0" name="lib/model/om/BaseAshiatoPeer.php" role="php" />
+   <file baseinstalldir="/" md5sum="5e50851e966be871615ccabc0d474fe0" name="lib/opRegisterAshiato.class.php" role="data" />
+   <file baseinstalldir="/" md5sum="c3bb1d9cfba60295e4c866156d83ccf3" name="lib/filter/AshiatoFormFilter.class.php" role="data" />
+   <file baseinstalldir="/" md5sum="f2c85b66f81cc0c7dc6b01bddd09e56e" name="lib/form/AshiatoForm.class.php" role="data" />
+   <file baseinstalldir="/" md5sum="b0b68a2b1fb44f7cc3d7b932f6c24ede" name="lib/model/Ashiato.php" role="data" />
+   <file baseinstalldir="/" md5sum="8ff4a922ebfb9a2565b512b79dc22b65" name="lib/model/AshiatoPeer.php" role="data" />
    <file baseinstalldir="/" md5sum="3b83ef96387f14655fc854ddc3c6bd57" name="LICENSE" role="data" />
   </dir>
  </contents>
  <dependencies>
   <required>
    <php>
-    <min>5.2.0</min>
+    <min>5.2.3</min>
    </php>
    <pearinstaller>
     <min>1.4.0</min>
@@ -77,8 +72,8 @@
     <release>beta</release>
     <api>beta</api>
    </stability>
-   <date>2009-01-27</date>
-   <license>Apache 2.0</license>
+   <date>2009-02-05</date>
+   <license>Apache</license>
    <notes>First release</notes>
   </release>
  </changelog>
