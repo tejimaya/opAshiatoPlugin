@@ -6,3 +6,14 @@ Navigation:
     Translation:
       ja_JP:
         caption: "あしあと"
+      en:
+        caption: "Footprint"
+  mobile_home_side_navigation_ashiato:
+    type: "mobile_home"
+    uri: "ashiato/list"
+    sort_order: 12
+    Translation:
+      ja_JP:
+        caption: "[i:91]あしあと"
+      en:
+        caption: "Footprint"

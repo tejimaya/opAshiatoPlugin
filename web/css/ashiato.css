@@ -1,0 +1,23 @@
+/*==============================================================================
+ * 30. ashiatoList（あしあとリスト）
+ *----------------------------------------------------------------------------*/
+.ashiatoList div.partsInfo {
+	border-bottom: 1px solid #CCCCCC;
+}
+.ashiatoList div.item {
+	margin: 8px 40px;
+	padding: 8px 0;
+	border: 1px solid #CCCCCC;
+}
+.ashiatoList div.item p,
+.ashiatoList div.item ul.list {
+	padding-left: 160px;
+}
+.ashiatoList div.item p strong {
+	margin: 0 2px;
+}
+.ashiatoList div.item ul.list {
+	overflow: hidden;
+	margin-top: 16px;
+}
+
