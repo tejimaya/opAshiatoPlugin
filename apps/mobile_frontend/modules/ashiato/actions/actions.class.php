@@ -13,8 +13,8 @@
  *
  * @package    OpenPNE
  * @subpackage ashiato
- * @author     Satoru Yamane <yamane@icz.co.jp>
  * @author     Shingo Yamada <s.yamada@tejimaya.com>
+ * @version    SVN: $Id: actions.class.php 9301 2008-05-27 01:08:46Z dwhittle $
  */
 class ashiatoActions extends opAshiatoPluginAshiatoActions
 {

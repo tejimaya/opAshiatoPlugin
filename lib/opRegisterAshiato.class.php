@@ -48,6 +48,6 @@ class opRegisterAshiato
 
     $memberIdTo = $id;
     $memberIdFrom = $arguments['actionInstance']->getUser()->getMemberId();
-    AshiatoPeer::setAshiatoMember($memberIdTo, $memberIdFrom);
+    Doctrine::getTable('Ashiato')->setAshiatoMember($memberIdTo, $memberIdFrom);
   }
 }

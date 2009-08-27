@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<xliff version="1.0">
+  <file orginal="global" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="1">
+        <source>Pageview logs</source>
+        <target>あしあと</target>
+      </trans-unit>
+      <trans-unit id="2">
+        <source>no other Pageview logs</source>
+        <target>あしあとがありません</target>
+      </trans-unit>
+      <trans-unit id="3">
+        <source>Pageview Logs of %1%</source>
+        <target>%1%さんのﾍﾟｰｼﾞを訪れた人たちです。</target>
+      </trans-unit>
+      <trans-unit id="4">
+        <source>Pageview %d Count</source>
+        <target>総ｱｸｾｽ数：%d ｱｸｾｽ</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

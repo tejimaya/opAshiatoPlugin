@@ -1,0 +1,13 @@
+options:
+  charset: utf8
+actAs: [Timestampable]
+
+Ashiato:
+  columns:
+    id: { type: integer(4), primary: true, autoincrement: true }
+    member_id_from: { type: integer(4) }
+    member_id_to: { type: integer(4) }
+    r_date: { type: date }
+  relations:
+    Member: { local: member_id_to, foreign: id, onDelete: set null }
+    Member_2: { class: Member, local: member_id_from, foreign: id, onDelete: set null }

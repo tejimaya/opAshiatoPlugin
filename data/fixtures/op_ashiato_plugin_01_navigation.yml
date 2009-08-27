@@ -2,10 +2,7 @@ Navigation:
   default_navigation_ashiato:
     type: "default"
     uri: "ashiato/list"
-    sort_order: 12;
-
-NavigationI18n:
-  default_navigation_ashiato_i18n:
-    id: default_navigation_ashiato
-    caption: "あしあと"
-    culture: "ja_JP"
+    sort_order: 12
+    Translation:
+      ja_JP:
+        caption: "あしあと"

@@ -1,0 +1,4 @@
+all:
+  .settings:
+    max_ashiato: 20
+
