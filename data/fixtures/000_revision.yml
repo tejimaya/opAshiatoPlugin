@@ -1,0 +1,4 @@
+SnsConfig:
+  op_ashiato_plugin_current_revision:
+    name: "opAshiatoPlugin_revision"
+    value: 2
