@@ -9,9 +9,14 @@
 <table width="100%">
 <?php foreach ($pager->getResults() as $ashiato) : ?>
 <tr><td bgcolor="<?php echo cycle_vars($id, '#e0eaef,#ffffff') ?>">
+<?php if($ashiato->getMemberIdFrom()):?>
 <?php echo op_format_date($ashiato->updated_at, 'XDateTime'); ?>
 &nbsp;<?php echo link_to($ashiato->Member_2->name, 'member/profile?id=' . $ashiato->Member_2->id); ?>
+<?php else: ?>
+<?php echo op_format_date($ashiato->updated_at, 'XDateTime'); ?>
+&nbsp;<?php echo __('_');?>
 </td></tr>
+<?php endif; ?>
 <?php endforeach; ?>
 
 <?php endif; ?>
