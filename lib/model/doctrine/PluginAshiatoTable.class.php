@@ -22,8 +22,7 @@ class PluginAshiatoTable extends Doctrine_Table
     $day_list = array();
     $q = $this->createQuery()
       ->where('member_id_to = ?', $memberId)
-      ->groupBy('r_date')
-      ->orderBy('updated_at DESC');
+      ->groupBy('r_date DESC');
 
     foreach ($q->execute() as $day)
     {
