@@ -48,6 +48,32 @@ class opRegisterAshiato
 
     $memberIdTo = $id;
     $memberIdFrom = $arguments['actionInstance']->getUser()->getMemberId();
-    Doctrine::getTable('Ashiato')->setAshiatoMember($memberIdTo, $memberIdFrom);
+    if (Doctrine::getTable('Ashiato')->setAshiatoMember($memberIdTo, $memberIdFrom))
+    {
+      self::countUpOpAshiatoCount($memberIdTo);
+    }
+  }
+
+  static private function countUpOpAshiatoCount($memberId)
+  {
+    $memberConfig = Doctrine::getTable('MemberConfig')->retrieveByNameAndMemberId('op_ashiato_count', $memberId);
+    if (!$memberConfig)
+    {
+      $memberConfig = new MemberConfig();
+      $memberConfig->setMemberId($memberId);
+      $memberConfig->setName('op_ashiato_count');
+    }
+
+    $ashiatoCount = $memberConfig['value'];
+    if ($memberConfig['value'])
+    {
+      $ashiatoCount = $memberConfig['value'] + 1;
+    }
+    else
+    {
+      $ashiatoCount = Doctrine::getTable('Ashiato')->getAshiatoMemberListCount($memberId);
+    }
+    $memberConfig->setValue($ashiatoCount);
+    $memberConfig->save();
   }
 }

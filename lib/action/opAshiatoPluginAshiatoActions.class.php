@@ -37,7 +37,12 @@ abstract class opAshiatoPluginAshiatoActions extends sfActions
     {
       return sfView::ERROR;
     }
-    $this->count = Doctrine::getTable('Ashiato')->getAshiatoMemberListCount($this->id);
+
+    $this->count = (int)$this->getUser()->getMember()->getConfig('op_ashiato_count');
+    if (!$this->count)
+    {
+      $this->count = Doctrine::getTable('Ashiato')->getAshiatoMemberListCount($this->id);
+    }
 
     return sfView::SUCCESS;
   }
