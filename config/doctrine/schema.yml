@@ -11,3 +11,14 @@ Ashiato:
   relations:
     Member: { local: member_id_to, foreign: id, onDelete: set null }
     Member_2: { class: Member, local: member_id_from, foreign: id, onDelete: set null }
+  indexes:
+    member_id_to:
+      fields: [member_id_to]
+    member_id_from:
+      fields: [member_id_from]
+    created_at:
+      fields: [created_at]
+    member_id_to_member_id_from_updated_at:
+      fields: [member_id_to, member_id_from, updated_at]
+    member_id_to_r_date:
+      fields: [member_id_to, r_date]

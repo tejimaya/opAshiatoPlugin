@@ -21,25 +21,26 @@ class PluginAshiatoTable extends Doctrine_Table
   {
     $day_list = array();
     $q = $this->createQuery()
+      ->select('r_date')
       ->where('member_id_to = ?', $memberId)
-      ->groupBy('r_date')
-      ->orderBy('updated_at DESC');
+      ->groupBy('r_date DESC')
+      ->limit($size);
 
     foreach ($q->execute() as $day)
     {
-      $day_list[] = $day->r_date;
+      $day_list[] = $day[0];
     }
 
     $q = $this->createQuery()
       ->select('*')
       ->addSelect('MAX(updated_at) as updated_at')
       ->where('member_id_to = ?', $memberId)
-      ->whereIn('r_date', $day_list)
+      ->andWhereIn('r_date', $day_list)
       ->groupBy('member_id_from')
-      ->groupBy('r_date')
+      ->addGroupBy('r_date')
       ->orderBy('updated_at DESC');
 
-    $pager = new sfDoctrinePager('Ashiato', $size);
+    $pager = new opNonCountQueryPager('Ashiato', $size);
     $pager->setQuery($q);
     $pager->setPage($page);
     $pager->init();
@@ -63,11 +64,13 @@ class PluginAshiatoTable extends Doctrine_Table
 
     $wait = date('Y-m-d H:i:s', strtotime('-' . sfConfig::get('app_update_span_minute') . 'minute'));
     $q = Doctrine_Query::create()
+      ->select('id')
       ->from('ashiato')
       ->where('member_id_to = ?', $memberIdTo)
       ->andwhere('member_id_from = ?', $memberIdFrom)
-      ->andWhere('updated_at > ?', $wait);
-    if ($q->count())
+      ->andWhere('updated_at > ?', $wait)
+      ->limit(1);
+    if (count($q->execute(array(), Doctrine::HYDRATE_NONE)))
     {
       return false;
     }
