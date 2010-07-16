@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.9.0" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0
+    http://pear.php.net/dtd/tasks-1.0.xsd
+    http://pear.php.net/dtd/package-2.0
+    http://pear.php.net/dtd/package-2.0.xsd">
+ <name>opAshiatoPlugin</name>
+ <channel>plugins.openpne.jp</channel>
+ <summary>opAshiatoPlugin</summary>
+ <description>opAshiatoPlugin</description>
+ <lead>
+  <name>Kankuro Akiyama</name>
+  <user>icz</user>
+  <email />
+  <active>yes</active>
+ </lead>
+ <lead>
+  <name>Shingo Yamada</name>
+  <user>shingo</user>
+  <email />
+  <active>yes</active>
+ </lead>
+ <date>2010-07-16</date>
+ <time>21:36:50</time>
+ <version>
+  <release>0.9.1</release>
+  <api>0.9.1</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license>apache</license>
+ <notes>
+sql tune &amp; add function to save total count
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="06a79bf79ae407ac06a05733a782b069" name="apps/mobile_frontend/i18n/messages.ja.xml" role="data" />
+   <file baseinstalldir="/" md5sum="de6d2b50afb8bfadeb5ef4f124174237" name="apps/mobile_frontend/modules/ashiato/actions/actions.class.php" role="data" />
+   <file baseinstalldir="/" md5sum="890ed6cf1b151fb4eb78168379357c31" name="apps/mobile_frontend/modules/ashiato/config/module.yml" role="data" />
+   <file baseinstalldir="/" md5sum="a1cf1e8495b4692a4ad8a274958e3855" name="apps/mobile_frontend/modules/ashiato/templates/listError.php" role="data" />
+   <file baseinstalldir="/" md5sum="ced243775379cd86cbeaf6a13cab31a5" name="apps/mobile_frontend/modules/ashiato/templates/listSuccess.php" role="data" />
+   <file baseinstalldir="/" md5sum="a4394df5eb8cac7b86a9b108f58db8c6" name="apps/pc_frontend/i18n/messages.ja.xml" role="data" />
+   <file baseinstalldir="/" md5sum="ffee5081bac11e053c9298cc72211e87" name="apps/pc_frontend/modules/ashiato/actions/actions.class.php" role="data" />
+   <file baseinstalldir="/" md5sum="a3968728f09d5e2ac78764189a56a6ec" name="apps/pc_frontend/modules/ashiato/config/module.yml" role="data" />
+   <file baseinstalldir="/" md5sum="31a9b416e4603892e50fc52658028ae8" name="apps/pc_frontend/modules/ashiato/config/security.yml" role="data" />
+   <file baseinstalldir="/" md5sum="6e594d976edba129bdc8fb4a88a64473" name="apps/pc_frontend/modules/ashiato/config/view.yml" role="data" />
+   <file baseinstalldir="/" md5sum="356d700903d793e82f382e2bdbd03d2c" name="apps/pc_frontend/modules/ashiato/templates/listError.php" role="data" />
+   <file baseinstalldir="/" md5sum="4ab9cd3f36dff56c5e6001eae47f4f20" name="apps/pc_frontend/modules/ashiato/templates/listSuccess.php" role="data" />
+   <file baseinstalldir="/" md5sum="ac245011ffca1bd568135a91f0302bc8" name="config/app.yml" role="data" />
+   <file baseinstalldir="/" md5sum="626cbfa99e90311bd5f11f97fdc5d4f4" name="config/config.php" role="data" />
+   <file baseinstalldir="/" md5sum="7be170651f59d9e3d935bc07fc7dab11" name="config/schema.yml" role="data" />
+   <file baseinstalldir="/" md5sum="7a633e60b190e567aa5652361caece1b" name="config/doctrine/schema.yml" role="data" />
+   <file baseinstalldir="/" md5sum="0907e8999e1a2c4d717a2bce28194c52" name="data/fixtures/000_revision.yml" role="data" />
+   <file baseinstalldir="/" md5sum="fff79b2dad74a31bfe916cfc00f434a4" name="data/fixtures/001_navigation.yml" role="data" />
+   <file baseinstalldir="/" md5sum="70682d62493e7687807caedc1908df64" name="data/migrations/0.9.0/001_install_op_ashiato_plugin_0_9_0_1.php" role="data" />
+   <file baseinstalldir="/" md5sum="54738c615c999824aef5a749bfe8adbc" name="data/migrations/0.9.0/002_install_op_ashiato_plugin_0_9_0_2.php" role="data" />
+   <file baseinstalldir="/" md5sum="9922918a092dd2aa5d402813ad175b54" name="data/migrations/0.9.1/003_install_op_ashiato_plugin_0_9_1_1.php" role="data" />
+   <file baseinstalldir="/" md5sum="8a36d8a7cf2ff92a3540f18ce682342f" name="lib/opRegisterAshiato.class.php" role="data" />
+   <file baseinstalldir="/" md5sum="961053f1c7b9d7ad19f99648cd792cb9" name="lib/action/opAshiatoPluginAshiatoActions.class.php" role="data" />
+   <file baseinstalldir="/" md5sum="c3bb1d9cfba60295e4c866156d83ccf3" name="lib/filter/AshiatoFormFilter.class.php" role="data" />
+   <file baseinstalldir="/" md5sum="6d081328cf152140f31418cfaca2abd4" name="lib/filter/doctrine/PluginAshiatoFormFilter.class.php" role="data" />
+   <file baseinstalldir="/" md5sum="f2c85b66f81cc0c7dc6b01bddd09e56e" name="lib/form/AshiatoForm.class.php" role="data" />
+   <file baseinstalldir="/" md5sum="ef19fef98b339a894b16eab2d07e930d" name="lib/form/doctrine/PluginAshiatoForm.class.php" role="data" />
+   <file baseinstalldir="/" md5sum="e33adb285d06c45f6709bf2a441469cc" name="lib/model/doctrine/PluginAshiato.class.php" role="data" />
+   <file baseinstalldir="/" md5sum="761ebd4f15a9a73b0c1e12fe27d1cef4" name="lib/model/doctrine/PluginAshiatoTable.class.php" role="data" />
+   <file baseinstalldir="/" md5sum="434b17841d72d08521dc28473389a75a" name="web/css/ashiato.css" role="data" />
+   <file baseinstalldir="/" md5sum="3b83ef96387f14655fc854ddc3c6bd57" name="LICENSE" role="data" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.3</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.9.1</release>
+    <api>0.9.1</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2010-07-16</date>
+   <license>apache</license>
+   <notes>
+sql tune &amp; add function to save total count
+   </notes>
+  </release>
+ </changelog>
+</package>
