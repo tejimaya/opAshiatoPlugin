@@ -19,8 +19,8 @@
   <email />
   <active>yes</active>
  </lead>
- <date>2010-07-15</date>
- <time>04:53:32</time>
+ <date>2010-07-16</date>
+ <time>21:36:50</time>
  <version>
   <release>0.9.1</release>
   <api>0.9.1</api>
@@ -31,7 +31,7 @@
  </stability>
  <license>apache</license>
  <notes>
-stable release.
+sql tune &amp; add function to save total count
  </notes>
  <contents>
   <dir baseinstalldir="/" name="/">
@@ -51,7 +51,6 @@ stable release.
    <file baseinstalldir="/" md5sum="626cbfa99e90311bd5f11f97fdc5d4f4" name="config/config.php" role="data" />
    <file baseinstalldir="/" md5sum="7be170651f59d9e3d935bc07fc7dab11" name="config/schema.yml" role="data" />
    <file baseinstalldir="/" md5sum="7a633e60b190e567aa5652361caece1b" name="config/doctrine/schema.yml" role="data" />
-   <file baseinstalldir="/" md5sum="deba8715a4b14b6439f1163f2ea30f55" name="config/doctrine/schema.yml.rej" role="data" />
    <file baseinstalldir="/" md5sum="0907e8999e1a2c4d717a2bce28194c52" name="data/fixtures/000_revision.yml" role="data" />
    <file baseinstalldir="/" md5sum="fff79b2dad74a31bfe916cfc00f434a4" name="data/fixtures/001_navigation.yml" role="data" />
    <file baseinstalldir="/" md5sum="70682d62493e7687807caedc1908df64" name="data/migrations/0.9.0/001_install_op_ashiato_plugin_0_9_0_1.php" role="data" />
@@ -65,11 +64,8 @@ stable release.
    <file baseinstalldir="/" md5sum="ef19fef98b339a894b16eab2d07e930d" name="lib/form/doctrine/PluginAshiatoForm.class.php" role="data" />
    <file baseinstalldir="/" md5sum="e33adb285d06c45f6709bf2a441469cc" name="lib/model/doctrine/PluginAshiato.class.php" role="data" />
    <file baseinstalldir="/" md5sum="761ebd4f15a9a73b0c1e12fe27d1cef4" name="lib/model/doctrine/PluginAshiatoTable.class.php" role="data" />
-   <file baseinstalldir="/" md5sum="985f7e19e6334a0ad6024d3eeb602e35" name="lib/model/doctrine/PluginAshiatoTable.class.php.rej" role="data" />
    <file baseinstalldir="/" md5sum="434b17841d72d08521dc28473389a75a" name="web/css/ashiato.css" role="data" />
    <file baseinstalldir="/" md5sum="3b83ef96387f14655fc854ddc3c6bd57" name="LICENSE" role="data" />
-   <file baseinstalldir="/" md5sum="57eb2da64e029bb0f5508dcd29155a54" name="svn-commit.2.tmp" role="data" />
-   <file baseinstalldir="/" md5sum="57eb2da64e029bb0f5508dcd29155a54" name="svn-commit.tmp" role="data" />
   </dir>
  </contents>
  <dependencies>
@@ -86,36 +82,6 @@ stable release.
  <changelog>
   <release>
    <version>
-    <release>0.8.0</release>
-    <api>0.8.0</api>
-   </version>
-   <stability>
-    <release>beta</release>
-    <api>beta</api>
-   </stability>
-   <date>2009-02-05</date>
-   <license>Apache</license>
-   <notes>
-First release
-   </notes>
-  </release>
-  <release>
-   <version>
-    <release>0.9.0</release>
-    <api>0.9.0</api>
-   </version>
-   <stability>
-    <release>beta</release>
-    <api>beta</api>
-   </stability>
-   <date>2009-09-10</date>
-   <license>apache</license>
-   <notes>
-This plugin is now compatible with Doctrine
-   </notes>
-  </release>
-  <release>
-   <version>
     <release>0.9.1</release>
     <api>0.9.1</api>
    </version>
@@ -123,10 +89,10 @@ This plugin is now compatible with Doctrine
     <release>stable</release>
     <api>stable</api>
    </stability>
-   <date>2010-07-15</date>
+   <date>2010-07-16</date>
    <license>apache</license>
    <notes>
-stable release.
+sql tune &amp; add function to save total count
    </notes>
   </release>
  </changelog>
