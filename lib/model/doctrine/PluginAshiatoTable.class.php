@@ -21,14 +21,14 @@ class PluginAshiatoTable extends Doctrine_Table
   {
     $day_list = array();
     $q = $this->createQuery()
-      ->select('r_date')
+      ->select('id, r_date')
       ->where('member_id_to = ?', $memberId)
       ->groupBy('r_date DESC')
       ->limit($size);
 
-    foreach ($q->execute() as $day)
+    foreach ($q->execute(array(), Doctrine::HYDRATE_NONE) as $day)
     {
-      $day_list[] = $day[0];
+      $day_list[] = $day[1];
     }
 
     $q = $this->createQuery()
