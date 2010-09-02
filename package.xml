@@ -19,11 +19,17 @@
   <email />
   <active>yes</active>
  </lead>
- <date>2010-07-16</date>
- <time>21:36:50</time>
+ <lead>
+  <name>Kousuke Ebihara</name>
+  <user>ebihara</user>
+  <email />
+  <active>yes</active>
+ </lead>
+ <date>2010-09-02</date>
+ <time>16:25:59</time>
  <version>
-  <release>0.9.1</release>
-  <api>0.9.1</api>
+  <release>0.9.1.1</release>
+  <api>0.9.1.1</api>
  </version>
  <stability>
   <release>stable</release>
@@ -31,7 +37,7 @@
  </stability>
  <license>apache</license>
  <notes>
-sql tune &amp; add function to save total count
+あしあと一覧ページが閲覧できなくなっていた問題の修正
  </notes>
  <contents>
   <dir baseinstalldir="/" name="/">
@@ -63,7 +69,7 @@ sql tune &amp; add function to save total count
    <file baseinstalldir="/" md5sum="f2c85b66f81cc0c7dc6b01bddd09e56e" name="lib/form/AshiatoForm.class.php" role="data" />
    <file baseinstalldir="/" md5sum="ef19fef98b339a894b16eab2d07e930d" name="lib/form/doctrine/PluginAshiatoForm.class.php" role="data" />
    <file baseinstalldir="/" md5sum="e33adb285d06c45f6709bf2a441469cc" name="lib/model/doctrine/PluginAshiato.class.php" role="data" />
-   <file baseinstalldir="/" md5sum="761ebd4f15a9a73b0c1e12fe27d1cef4" name="lib/model/doctrine/PluginAshiatoTable.class.php" role="data" />
+   <file baseinstalldir="/" md5sum="25b04a5a9e629231e3701c622c2e2b24" name="lib/model/doctrine/PluginAshiatoTable.class.php" role="data" />
    <file baseinstalldir="/" md5sum="434b17841d72d08521dc28473389a75a" name="web/css/ashiato.css" role="data" />
    <file baseinstalldir="/" md5sum="3b83ef96387f14655fc854ddc3c6bd57" name="LICENSE" role="data" />
   </dir>
@@ -82,6 +88,36 @@ sql tune &amp; add function to save total count
  <changelog>
   <release>
    <version>
+    <release>0.8.0</release>
+    <api>0.8.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2009-02-05</date>
+   <license>Apache</license>
+   <notes>
+First release
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>0.9.0</release>
+    <api>0.9.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2009-09-10</date>
+   <license>apache</license>
+   <notes>
+This plugin is now compatible with Doctrine
+   </notes>
+  </release>
+  <release>
+   <version>
     <release>0.9.1</release>
     <api>0.9.1</api>
    </version>
@@ -93,6 +129,21 @@ sql tune &amp; add function to save total count
    <license>apache</license>
    <notes>
 sql tune &amp; add function to save total count
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>0.9.1.1</release>
+    <api>0.9.1.1</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2010-09-02</date>
+   <license>apache</license>
+   <notes>
+あしあと一覧ページが閲覧できなくなっていた問題の修正
    </notes>
   </release>
  </changelog>
