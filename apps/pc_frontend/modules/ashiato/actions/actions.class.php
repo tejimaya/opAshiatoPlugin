@@ -25,6 +25,8 @@ class ashiatoActions extends sfActions
   public function executeList($request)
   {
     $this->id = $this->id = $this->getRequestParameter('id', $this->getUser()->getMemberId());
+    $this->forward404Unless($this->id === $this->getUser()->getMemberId());
+
     $this->pager = AshiatoPeer::getAshiatoMemberListPager($this->id, $request->getParameter('page', 1), sfConfig::get('mod_ashiato_max_ashiato'));
     if (!$this->pager->getNbResults())
     {
