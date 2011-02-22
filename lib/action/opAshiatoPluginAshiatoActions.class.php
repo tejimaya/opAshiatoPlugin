@@ -27,6 +27,7 @@ abstract class opAshiatoPluginAshiatoActions extends sfActions
   {
     $this->id = $this->getRequestParameter('id', $this->getUser()->getMemberId());
 
+    $this->forward404Unless($this->id === $this->getUser()->getMemberId());
     $this->pager = Doctrine::getTable('Ashiato')->getAshiatoListPager(
       $this->id,
       $request->getParameter('page'),
