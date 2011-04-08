@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<package packagerversion="1.7.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0
+<package packagerversion="1.9.0" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0
     http://pear.php.net/dtd/tasks-1.0.xsd
     http://pear.php.net/dtd/package-2.0
     http://pear.php.net/dtd/package-2.0.xsd">
@@ -13,23 +13,38 @@
   <email />
   <active>yes</active>
  </lead>
- <date>2009-09-10</date>
- <time>04:40:40</time>
+ <lead>
+  <name>Shingo Yamada</name>
+  <user>shingo</user>
+  <email />
+  <active>yes</active>
+ </lead>
+ <lead>
+  <name>Kousuke Ebihara</name>
+  <user>ebihara</user>
+  <email />
+  <active>yes</active>
+ </lead>
+ <date>2011-04-09</date>
+ <time>04:14:04</time>
  <version>
-  <release>0.9.0</release>
-  <api>0.9.0</api>
+  <release>0.9.0.1</release>
+  <api>0.9.0.1</api>
  </version>
  <stability>
   <release>beta</release>
   <api>beta</api>
  </stability>
  <license>apache</license>
- <notes>This plugin is now compatible with Doctrine</notes>
+ <notes>
+fixed that ashiato actions allow access-blocking member&apos;s access
+ </notes>
  <contents>
   <dir baseinstalldir="/" name="/">
    <file baseinstalldir="/" md5sum="06a79bf79ae407ac06a05733a782b069" name="apps/mobile_frontend/i18n/messages.ja.xml" role="data" />
    <file baseinstalldir="/" md5sum="de6d2b50afb8bfadeb5ef4f124174237" name="apps/mobile_frontend/modules/ashiato/actions/actions.class.php" role="data" />
    <file baseinstalldir="/" md5sum="890ed6cf1b151fb4eb78168379357c31" name="apps/mobile_frontend/modules/ashiato/config/module.yml" role="data" />
+   <file baseinstalldir="/" md5sum="31a9b416e4603892e50fc52658028ae8" name="apps/mobile_frontend/modules/ashiato/config/security.yml" role="data" />
    <file baseinstalldir="/" md5sum="a1cf1e8495b4692a4ad8a274958e3855" name="apps/mobile_frontend/modules/ashiato/templates/listError.php" role="data" />
    <file baseinstalldir="/" md5sum="ced243775379cd86cbeaf6a13cab31a5" name="apps/mobile_frontend/modules/ashiato/templates/listSuccess.php" role="data" />
    <file baseinstalldir="/" md5sum="a4394df5eb8cac7b86a9b108f58db8c6" name="apps/pc_frontend/i18n/messages.ja.xml" role="data" />
@@ -48,7 +63,7 @@
    <file baseinstalldir="/" md5sum="70682d62493e7687807caedc1908df64" name="data/migrations/0.9.0/001_install_op_ashiato_plugin_0_9_0_1.php" role="data" />
    <file baseinstalldir="/" md5sum="54738c615c999824aef5a749bfe8adbc" name="data/migrations/0.9.0/002_install_op_ashiato_plugin_0_9_0_2.php" role="data" />
    <file baseinstalldir="/" md5sum="ad271745645625d05caf1a1f3ceb612e" name="lib/opRegisterAshiato.class.php" role="data" />
-   <file baseinstalldir="/" md5sum="a935c0ef059ad2fe512875ad55d6c273" name="lib/action/opAshiatoPluginAshiatoActions.class.php" role="data" />
+   <file baseinstalldir="/" md5sum="9ba197de16ac40954020ae76e350cf27" name="lib/action/opAshiatoPluginAshiatoActions.class.php" role="data" />
    <file baseinstalldir="/" md5sum="c3bb1d9cfba60295e4c866156d83ccf3" name="lib/filter/AshiatoFormFilter.class.php" role="data" />
    <file baseinstalldir="/" md5sum="6d081328cf152140f31418cfaca2abd4" name="lib/filter/doctrine/PluginAshiatoFormFilter.class.php" role="data" />
    <file baseinstalldir="/" md5sum="f2c85b66f81cc0c7dc6b01bddd09e56e" name="lib/form/AshiatoForm.class.php" role="data" />
@@ -67,11 +82,6 @@
    <pearinstaller>
     <min>1.4.0</min>
    </pearinstaller>
-   <package>
-    <name>symfony</name>
-    <channel>pear.symfony-project.com</channel>
-    <min>1.2.0</min>
-   </package>
   </required>
  </dependencies>
  <phprelease />
@@ -87,7 +97,9 @@
    </stability>
    <date>2009-02-05</date>
    <license>Apache</license>
-   <notes>First release</notes>
+   <notes>
+First release
+   </notes>
   </release>
   <release>
    <version>
@@ -100,7 +112,24 @@
    </stability>
    <date>2009-09-10</date>
    <license>apache</license>
-   <notes>This plugin is now compatible with Doctrine</notes>
+   <notes>
+This plugin is now compatible with Doctrine
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>0.9.0.1</release>
+    <api>0.9.0.1</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2011-04-09</date>
+   <license>apache</license>
+   <notes>
+fixed that ashiato actions allow access-blocking member&apos;s access
+   </notes>
   </release>
  </changelog>
 </package>
