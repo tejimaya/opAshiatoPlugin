@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<package packagerversion="1.7.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0
+<package packagerversion="1.9.0" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0
     http://pear.php.net/dtd/tasks-1.0.xsd
     http://pear.php.net/dtd/package-2.0
     http://pear.php.net/dtd/package-2.0.xsd">
@@ -8,27 +8,41 @@
  <summary>opAshiatoPlugin</summary>
  <description>opAshiatoPlugin</description>
  <lead>
-  <name>Satoru Yamane</name>
+  <name>Kankuro Akiyama</name>
   <user>icz</user>
   <email />
   <active>yes</active>
  </lead>
- <date>2009-02-05</date>
- <time>08:22:35</time>
+ <lead>
+  <name>Shingo Yamada</name>
+  <user>shingo</user>
+  <email />
+  <active>yes</active>
+ </lead>
+ <lead>
+  <name>Kousuke Ebihara</name>
+  <user>ebihara</user>
+  <email />
+  <active>yes</active>
+ </lead>
+ <date>2011-04-09</date>
+ <time>04:12:44</time>
  <version>
-  <release>0.8.0</release>
-  <api>0.8.0</api>
+  <release>0.8.0.1</release>
+  <api>0.8.0.1</api>
  </version>
  <stability>
   <release>beta</release>
   <api>beta</api>
  </stability>
- <license>Apache</license>
- <notes>First release</notes>
+ <license>apache</license>
+ <notes>
+fixed that ashiato actions allow access-blocking member&apos;s access
+ </notes>
  <contents>
   <dir baseinstalldir="/" name="/">
    <file baseinstalldir="/" md5sum="a4394df5eb8cac7b86a9b108f58db8c6" name="apps/pc_frontend/i18n/messages.ja.xml" role="data" />
-   <file baseinstalldir="/" md5sum="158a70da52748f6e219d79faeee86cac" name="apps/pc_frontend/modules/ashiato/actions/actions.class.php" role="data" />
+   <file baseinstalldir="/" md5sum="827e9582274fffa5a05613495fb30efc" name="apps/pc_frontend/modules/ashiato/actions/actions.class.php" role="data" />
    <file baseinstalldir="/" md5sum="a3968728f09d5e2ac78764189a56a6ec" name="apps/pc_frontend/modules/ashiato/config/module.yml" role="data" />
    <file baseinstalldir="/" md5sum="31a9b416e4603892e50fc52658028ae8" name="apps/pc_frontend/modules/ashiato/config/security.yml" role="data" />
    <file baseinstalldir="/" md5sum="d41d8cd98f00b204e9800998ecf8427e" name="apps/pc_frontend/modules/ashiato/templates/indexSuccess.php" role="data" />
@@ -54,11 +68,6 @@
    <pearinstaller>
     <min>1.4.0</min>
    </pearinstaller>
-   <package>
-    <name>symfony</name>
-    <channel>pear.symfony-project.com</channel>
-    <min>1.2.0</min>
-   </package>
   </required>
  </dependencies>
  <phprelease />
@@ -74,7 +83,24 @@
    </stability>
    <date>2009-02-05</date>
    <license>Apache</license>
-   <notes>First release</notes>
+   <notes>
+First release
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>0.8.0.1</release>
+    <api>0.8.0.1</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2011-04-09</date>
+   <license>apache</license>
+   <notes>
+fixed that ashiato actions allow access-blocking member&apos;s access
+   </notes>
   </release>
  </changelog>
 </package>
