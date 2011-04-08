@@ -25,11 +25,11 @@
   <email />
   <active>yes</active>
  </lead>
- <date>2010-09-02</date>
- <time>16:25:59</time>
+ <date>2011-04-09</date>
+ <time>04:14:11</time>
  <version>
-  <release>0.9.1.1</release>
-  <api>0.9.1.1</api>
+  <release>0.9.1.2</release>
+  <api>0.9.1.2</api>
  </version>
  <stability>
   <release>stable</release>
@@ -37,13 +37,14 @@
  </stability>
  <license>apache</license>
  <notes>
-あしあと一覧ページが閲覧できなくなっていた問題の修正
+fixed that ashiato actions allow access-blocking member&apos;s access
  </notes>
  <contents>
   <dir baseinstalldir="/" name="/">
    <file baseinstalldir="/" md5sum="06a79bf79ae407ac06a05733a782b069" name="apps/mobile_frontend/i18n/messages.ja.xml" role="data" />
    <file baseinstalldir="/" md5sum="de6d2b50afb8bfadeb5ef4f124174237" name="apps/mobile_frontend/modules/ashiato/actions/actions.class.php" role="data" />
    <file baseinstalldir="/" md5sum="890ed6cf1b151fb4eb78168379357c31" name="apps/mobile_frontend/modules/ashiato/config/module.yml" role="data" />
+   <file baseinstalldir="/" md5sum="31a9b416e4603892e50fc52658028ae8" name="apps/mobile_frontend/modules/ashiato/config/security.yml" role="data" />
    <file baseinstalldir="/" md5sum="a1cf1e8495b4692a4ad8a274958e3855" name="apps/mobile_frontend/modules/ashiato/templates/listError.php" role="data" />
    <file baseinstalldir="/" md5sum="ced243775379cd86cbeaf6a13cab31a5" name="apps/mobile_frontend/modules/ashiato/templates/listSuccess.php" role="data" />
    <file baseinstalldir="/" md5sum="a4394df5eb8cac7b86a9b108f58db8c6" name="apps/pc_frontend/i18n/messages.ja.xml" role="data" />
@@ -63,7 +64,7 @@
    <file baseinstalldir="/" md5sum="54738c615c999824aef5a749bfe8adbc" name="data/migrations/0.9.0/002_install_op_ashiato_plugin_0_9_0_2.php" role="data" />
    <file baseinstalldir="/" md5sum="9922918a092dd2aa5d402813ad175b54" name="data/migrations/0.9.1/003_install_op_ashiato_plugin_0_9_1_1.php" role="data" />
    <file baseinstalldir="/" md5sum="8a36d8a7cf2ff92a3540f18ce682342f" name="lib/opRegisterAshiato.class.php" role="data" />
-   <file baseinstalldir="/" md5sum="961053f1c7b9d7ad19f99648cd792cb9" name="lib/action/opAshiatoPluginAshiatoActions.class.php" role="data" />
+   <file baseinstalldir="/" md5sum="c077a990c85628e4b4d1c27c52178646" name="lib/action/opAshiatoPluginAshiatoActions.class.php" role="data" />
    <file baseinstalldir="/" md5sum="c3bb1d9cfba60295e4c866156d83ccf3" name="lib/filter/AshiatoFormFilter.class.php" role="data" />
    <file baseinstalldir="/" md5sum="6d081328cf152140f31418cfaca2abd4" name="lib/filter/doctrine/PluginAshiatoFormFilter.class.php" role="data" />
    <file baseinstalldir="/" md5sum="f2c85b66f81cc0c7dc6b01bddd09e56e" name="lib/form/AshiatoForm.class.php" role="data" />
@@ -144,6 +145,21 @@ sql tune &amp; add function to save total count
    <license>apache</license>
    <notes>
 あしあと一覧ページが閲覧できなくなっていた問題の修正
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>0.9.1.2</release>
+    <api>0.9.1.2</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2011-04-09</date>
+   <license>apache</license>
+   <notes>
+fixed that ashiato actions allow access-blocking member&apos;s access
    </notes>
   </release>
  </changelog>
