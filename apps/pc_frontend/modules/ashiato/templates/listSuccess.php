@@ -10,7 +10,7 @@
 <p><?php echo __('Pageview %d Count', array('%d' =>$count)) ?></p>
 <ul class="list">
     <?php foreach ($pager->getResults() as $ashiato) : ?>
-    <li><?php echo op_format_date($ashiato->updated_at, 'XDateTimeJaBr'); ?>&nbsp;
+    <li><?php echo op_format_date($ashiato->ua, 'XDateTimeJaBr'); ?>&nbsp;
     <?php if ($ashiato->Member_2 && $ashiato->Member_2->id): ?>
       <?php echo link_to($ashiato->Member_2->name, 'member/profile?id=' . $ashiato->Member_2->id); ?>
     <?php else: ?>

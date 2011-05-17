@@ -33,12 +33,12 @@ class PluginAshiatoTable extends Doctrine_Table
 
     $q = $this->createQuery()
       ->select('*')
-      ->addSelect('MAX(updated_at) as updated_at')
+      ->addSelect('MAX(updated_at) as ua')
       ->where('member_id_to = ?', $memberId)
       ->andWhereIn('r_date', $day_list)
       ->groupBy('member_id_from')
       ->addGroupBy('r_date')
-      ->orderBy('updated_at DESC');
+      ->orderBy('ua DESC');
 
     $pager = new opNonCountQueryPager('Ashiato', $size);
     $pager->setQuery($q);
