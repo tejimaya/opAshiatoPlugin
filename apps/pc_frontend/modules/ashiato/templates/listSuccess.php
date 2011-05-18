@@ -12,7 +12,7 @@
     <?php foreach ($pager->getResults() as $ashiato) : ?>
     <li><?php echo op_format_date($ashiato->ua, 'XDateTimeJaBr'); ?>&nbsp;
     <?php if ($ashiato->Member_2 && $ashiato->Member_2->id): ?>
-      <?php echo link_to($ashiato->Member_2->name, 'member/profile?id=' . $ashiato->Member_2->id); ?>
+      <?php echo link_to($ashiato->Member_2->name, 'member/profile?id='.$ashiato->Member_2->id); ?>
     <?php else: ?>
       <?php echo opConfig::get('nickname_of_member_who_does_not_have_credentials', '') ?>
     <?php endif ?>
