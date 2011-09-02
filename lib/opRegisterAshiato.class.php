@@ -48,6 +48,12 @@ class opRegisterAshiato
 
     $memberIdTo = $id;
     $memberIdFrom = $arguments['actionInstance']->getUser()->getMemberId();
+
+    if (!$memberIdFrom)
+    {
+      return false;
+    }
+
     if (Doctrine::getTable('Ashiato')->setAshiatoMember($memberIdTo, $memberIdFrom))
     {
       self::countUpOpAshiatoCount($memberIdTo);
