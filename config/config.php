@@ -19,3 +19,7 @@ $this->dispatcher->connect(
   array('opRegisterAshiato', 'listenToPostActionEventRetriveMemberById')
 );
 
+$this->dispatcher->connect(
+  'op_action.pre_execute_member_delete',
+  array('opRemoveAshiato', 'listenToPreActionEventRetriveMemberById')
+);
