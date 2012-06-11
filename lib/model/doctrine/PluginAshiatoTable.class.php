@@ -83,7 +83,7 @@ class PluginAshiatoTable extends Doctrine_Table
 
     return $ashiato->getID();
   }
-  
+
   public function removeAshiatoForDeletedMember($memberIdFrom)
   {
     $this->_conn->execute('SET FOREIGN_KEY_CHECKS = 0');
@@ -104,7 +104,7 @@ class PluginAshiatoTable extends Doctrine_Table
       ->delete()
       ->from('ashiato')
       ->where('member_id_from is null')
-      ->andWhere('member_id_to is null');    
+      ->andWhere('member_id_to is null');
     $q->execute(array(), Doctrine::HYDRATE_NONE);
 
     $this->_conn->execute('SET FOREIGN_KEY_CHECKS = 1');
